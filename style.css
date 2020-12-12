@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
+
+body {
+  background-image: url("wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  height: 550px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.game-btn {
+  border-radius: 30px;
+  background: #3c6690;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  width: 250px;
+  padding: 20px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.ph {
+  margin-bottom: 40px;
+}
+
+.game-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.game-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  right: -20;
+  transition: 0.5s;
+}
+.game-btn:hover span {
+  padding-right: 25px;
+}
+.game-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.title {
+  width: 950px;
+  font-size: 110px;
+  margin-top: 50px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 110px;
+  font-family: "Catamaran", sans-serif;
+  color: rgba(60, 102, 144, 0.5);
+}
+
+.title::before {
+  position: absolute;
+  content: "SCIENCE GAMES";
+  color: rgba(60, 102, 144, 1);
+  top: 5px;
+  left: 10px;
+}
+
+.title::after {
+  z-index: -1;
+  position: absolute;
+  content: "SCIENCE GAMES";
+  color: rgba(60, 102, 144, 0.3);
+  top: -5px;
+  left: 8px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: flex-end;
+  color: #3c6690;
+  font-size: 50px;
+  margin-left: 100px;
+}
