@@ -3,22 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Games </title>
+    <title> Science Games </title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/35b08bd0fa.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </head>
-<body>
-    <div class="row">
-        <div class="column">
-            <div class="title"> Science games </div>
-            <div class="column-container">
-                <div class="subtitle"> Developed by Surani Maria</div>
-                <div class="buttons">
-                    <div class="container-btn"><a class="game-btn ph" href="PhGame/index.html"><span>Ph matching</a></div>
-                    <div class="container-btn"><a class="game-btn" href="DoodleJump/index.html"><span>Bacteria's adventure</a></div>
-                </div>
+<body onload="myFunction()">
+    <div id="loading">
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+    </div>
+    <div id="container">
+        <div class="social-media-container"> 
+            <a href="https://github.com/suranimaria/ch-games"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/maria-surani-89897a18a/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/suranimaria_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/surani.maria/"><i class="fab fa-facebook-square"></i></a>
+            <div class="vertical-line"></div>
+        </div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="atom"></div>
+        <div class="holder">
+            <div class="small-holder">
+                <div class="title"> Science games </div>
+                <div class="subtitle"> Learning Science Made Fun</div>
+            </div>
+            <div class="buttons">
+                <a class="game-btn ph" href="PhGame/index.html"><span>Ph matching</a>
+                <a class="game-btn" href="DoodleJump/index.html"><span>Bacteria's adventure</a>
             </div>
         </div>
+        <div class="mail-container">
+            <a href="mailto: suranimaria@gmail.com" class="mail"> suranimaria@gmail.com </a>
+            <div class="vertical-line"></div>
+        </div>
+        <div class="footer-text">Designed & Built by Surani Maria</div>
     </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("container").style.display = "block";
+        }
+    </script>
 </body>
 </html>
+
+
+

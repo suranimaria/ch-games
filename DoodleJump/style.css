@@ -2,6 +2,13 @@ body {
   background-color: black;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 93vh;
+}
+
 .grid {
   width: 400px;
   height: 600px;
@@ -31,4 +38,40 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
+}
+
+button {
+  background-color: transparent;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: sans-serif;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  outline: none;
+}
+
+button:hover {
+  border: 3px solid rgba(244, 67, 54, 0.5);
+  color: rgba(244, 67, 54, 1);
+  animation: shake 0.3s linear 1;
+}
+
+@keyframes shake {
+  33% {
+    transform: rotate(5deg);
+  }
+
+  66% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
 }
